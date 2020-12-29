@@ -18,6 +18,7 @@
                         <tr>
                             <th>id</th>
                             <th>title</th>
+                            <th>article</th>
                             <th></th>
                             <th></th>
                             <th></th>
@@ -28,6 +29,7 @@
                         <tr>
                             <td>{{ $todo->id }}</td>
                             <td>{{ $todo->title }}</td>
+                            <td>{{ $todo->article }}</td>
                             <td><a href="{{ url('todos/' . $todo->id) }}" class="btn btn-info">詳細</a></td>
                             <td><a href="{{ url('todos/' . $todo->id . '/edit') }}" class="btn btn-primary">編集</a></td>
                             <td>

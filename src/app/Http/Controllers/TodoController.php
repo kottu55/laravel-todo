@@ -39,6 +39,7 @@ class TodoController extends Controller
     {
         $todo = new Todo();
         $todo->title = $request->input('title');
+        $todo->article = $request->input('article');
         $todo->save();
 
         return redirect('todos')->with(
@@ -85,6 +86,7 @@ class TodoController extends Controller
         $todo = Todo::find($id);
 
         $todo->title = $request->input('title');
+        $todo->article = $request->input('article');
         $todo->save();
 
         return redirect('todos')->with(

@@ -12,6 +12,8 @@
                     <div class="form-group">
                         <label for="title" class="control-label">タイトル</label>
                         <input class="form-control" name="title" type="text">
+                        <label for="article" class="control-label">本文</label>
+                        <input class="form-control" name="article" type="text">
                     </div>
                     <button class="btn btn-primary" type="submit">登録</button>
                 </form>

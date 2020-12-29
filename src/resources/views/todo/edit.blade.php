@@ -18,6 +18,8 @@
                     <div class="form-group">
                         <label for="title" class="control-label">タイトル</label>
                         <input class="form-control" name="title" type="text" value="{{ $todo->title }}">
+                        <label for="article" class="control-label">本文</label>
+                        <input class="form-control" name="article" type="text" value="{{ $todo->article }}">
                     </div>
                     <hr>
                     <button class="btn btn-primary" type="submit">更新</button>

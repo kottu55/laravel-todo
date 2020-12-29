@@ -17,9 +17,14 @@
                             <th>title</th>
                             <td>{{$todo->title}}</td>
                         </tr>
+                        <tr>
+                            <th>article</th>
+                            <td>{{$todo->article}}</td>
+                        </tr>
                     </tbody>
                 </table>
                 <a href="{{ url('todos') }}" class="btn btn-info">戻る</a>
+                <a href="{{ url('todos/' . $todo->id . '/edit') }}" class="btn btn-primary">編集</a>
             </div>
         </div>
     </div>
